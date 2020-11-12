@@ -40,21 +40,12 @@ namespace ZooSim.Library.Standard.Models
         }
 
 
-        /// <summary>
-        /// Name of the Zoo.
-        /// </summary>
         public string Name { get; set; }
 
 
-        /// <summary>
-        /// A dictionary of all anumals grouped by type.
-        /// </summary>
         public Dictionary<string, List<Animal>> Animals { get; set; } = new Dictionary<string, List<Animal>>();
 
-
-        /// <summary>
-        /// Allow the visting user to feed the animals at random.
-        /// </summary>
+        
         public void FeedAnimals()
         {
             // Loop through all animal types
@@ -72,9 +63,6 @@ namespace ZooSim.Library.Standard.Models
         }
 
 
-        /// <summary>
-        /// Reduce the health of all animals randomly due to the passing of time.
-        /// </summary>
         public void Perish()
         {
             // Loop through all animal types

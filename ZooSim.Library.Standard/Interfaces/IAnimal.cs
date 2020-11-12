@@ -11,5 +11,19 @@ namespace ZooSim.Library.Standard.Interfaces
         /// </summary>
         /// <param name="percent"></param>
         void AddHealth(float percent);
+
+
+        /// <summary>
+        /// Calculates whether or not an animal is still alive depending on it's nature.
+        /// </summary>
+        /// <returns></returns>
+        bool IsAlive();
+
+
+        /// <summary>
+        /// Calculates whether or not an animal is still alive depending on it's nature.
+        /// </summary>
+        /// <returns></returns>
+        string MortalityDescription();
     }
 }

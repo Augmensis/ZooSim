@@ -16,13 +16,10 @@ namespace ZooSim.Library.Standard.Models
 
         public string Name { get; set; }
 
+
         public float Health { get; set; } = 100F;
         
 
-        /// <summary>
-        /// Adds/subtracts health for the animal as a percentage of its existing health value.
-        /// </summary>
-        /// <param name="percent"></param>
         public void AddHealth(float percent)
         {
             // If an animal isn't alive, there isn't much point in feeding it.
@@ -37,20 +34,12 @@ namespace ZooSim.Library.Standard.Models
         }
 
 
-        /// <summary>
-        /// Calculates whether or not an animal is still alive depending on it's nature.
-        /// </summary>
-        /// <returns></returns>
         public virtual bool IsAlive()
         {
             throw new NotImplementedException();
         }
 
 
-        /// <summary>
-        /// Calculates whether or not an animal is still alive depending on it's nature.
-        /// </summary>
-        /// <returns></returns>
         public virtual string MortalityDescription()
         {
             return IsAlive() ? "Alive" : "Dead";
