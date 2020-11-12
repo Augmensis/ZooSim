@@ -39,6 +39,7 @@ Unfortunately, Winforms support for pure .NET Core or .NET Standard is only avai
 
 So, to compromise, I've created the models, services and all associated logic in a .NET Standard library and Loaded it into a WinForms (.NET Framework) application as a reference. This way, the same library can be shared across .NET Framework, .NET Standard and .NET Core applications without much complication. The downside is the current project "ZooSim.Main" will only run in a Windows environment.
 
+Target Framework is 4.6.2 - If you don't have it installed, open the Application's Properties window and change the Target Framework accordingly.
 
 
 
